@@ -51,16 +51,15 @@ Hooks.once("ready", () => {
     // Only run for the GM or if the user owns the actor
     if (!game.user.isGM && !actor.isOwner) return;
     
+    // Only process NPCs (both linked and unlinked)
+    if (actor.type !== "npc") return;
+    
     // Check if HP was updated
     const hpPath = "system.attributes.hp.value"; // Adjust for your system
     if (!foundry.utils.hasProperty(updateData, hpPath)) return;
     
     const currentHP = foundry.utils.getProperty(actor, hpPath);
     const isCurrentlyItemPile = game.itempiles.API.isValidItemPile(actor);
-    
-    // Don't process linked actors
-    const tokens = actor.getActiveTokens();
-    if (tokens.length > 0 && tokens[0].document.actorLink) return;
     
     try {
       if (currentHP <= 0 && !isCurrentlyItemPile) {
