@@ -1,0 +1,42 @@
+{
+  "id": "itempiles-auto-hook",
+  "title": "Item Piles Auto Hook",
+  "description": "Automatically converts dead actors to item piles when HP drops to 0, and reverts them when revived.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "BragginRites",
+      "discord": "Braggin1205#1205"
+    }
+  ],
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13",
+    "maximum": "13"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "5.0.0",
+          "verified": "5.0.4"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "item-piles",
+        "type": "module",
+        "reason": "Required for item pile functionality"
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/auto-hook.js"
+  ],
+  "url": "https://github.com/BragginRites/itempiles-auto-hook",
+  "manifest": "https://github.com/BragginRites/itempiles-auto-hook/releases/latest/download/module.json",
+  "download": "https://github.com/BragginRites/itempiles-auto-hook/releases/latest/download/itempiles-auto-hook.zip"
+}
