@@ -2,7 +2,7 @@
   "id": "itempiles-auto-hook",
   "title": "Item Piles Auto Hook",
   "description": "Automatically converts dead actors to item piles when HP drops to 0, and reverts them when revived.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
     {
       "name": "BragginRites",
