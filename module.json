@@ -37,6 +37,6 @@
     "scripts/auto-hook.js"
   ],
   "url": "https://github.com/BragginRites/itempiles-auto-hook",
-  "manifest": "https://github.com/BragginRites/itempiles-auto-hook/releases/latest/download/module.json",
+  "manifest": "https://github.com/BragginRites/itempiles-auto-hook/releases/download/1.0.2/module.json",
   "download": "https://github.com/BragginRites/itempiles-auto-hook/releases/download/1.0.2/itempiles-auto-hook.zip"
 }
